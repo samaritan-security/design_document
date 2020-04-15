@@ -16,10 +16,69 @@
 
 [Team Website](http://sdmay20-45.sd.ece.iastate.edu/)
 
+## Table of Contents 
 
+## 1. Introductory Material
 
+TODO: write an introduction here
 
+### 1.1 Acknowledgement
 
+Samaritan Security is a self proposed project, and is available open sourced to the public under the *license name here* license.
+
+## 2. Executive Summary
+
+### 2.1 Development Standards and Practices Used
+
+talk about the usual agile bullshit here, but also our git org/repo + using issues + prs 
+
+### 2.2 Summary of Requirements
+
+Samaritan has the ability to:
+
+### 2.3 Applicable Courses from Iowa State Curriculum
+
+The following courses from within the Iowa State Curriculum have given the development team the necessary skills to complete this project: 
+
+- SE/CprE 414X
+- DS 201
+- SE/Com S 309
+- SE/Com S 319
+- CprE 489
+
+### 2.4 New Skills/Knowledge Acquired Outside of University Teachings
+
+*write book here*
+
+## 3. Revised Project Design
+
+### 3.1 Problem Statement
+
+### 3.2 Proposed Solution
+
+### 3.3 Operating Environment
+
+### 3.4 Intended Uses and Users
+
+### 3.5 Assumptions and Limitations
+
+### 3.6 Relevant Standards
+
+### 3.7 High Level Block Diagram
+
+## 4. Implementation Details
+
+### 4.1 Functional Requirements
+
+### 4.2 Non-Functional Requirements
+
+### 4.3 Modules
+
+#### 4.3.1 Facial Recognition Module
+
+#### 4.3.2 API
+
+#### 4.3.3 React Client
 
 ## 5. Testing
 
