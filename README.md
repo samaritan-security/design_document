@@ -36,12 +36,15 @@ Samaritan uses Python Unittest and React's *insert framework name here* to valid
   - Validates response Status Codes 
   - Validates contents of responses
   - Validates functionality of the API
+ 
 -  Facial recognition tests
   - Validates that the facial recognition works under numerous circumstances
   - Validates facial comparisons from "known" database
   - Validates TimeoutQueue is working 
+
 - Blur detection tests
   - Detects blurry images through tests
+
 - Usage of multiple cameras at once (Multiple camera tests)
   - Runs tests on different camera feeds and validates facial encodings
 
