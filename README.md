@@ -20,6 +20,77 @@
 
 
 
+## 3. Revised Project Design
+
+The following sections detail research on any othe products and solutions in this area, the 
+
+### 3.1 Problem Statement
+
+
+
+
+
+### 3.2 Proposed Solution
+
+
+
+
+
+### 3.3 Operating Environment 
+
+
+
+
+
+### 3.4 Intended Uses and Users
+
+
+
+
+
+### 3.5 Assumptions and Limitations 
+
+
+
+
+
+### 3.6 Relevant Standards
+
+
+
+
+
+### 3.7 High Level Block Diagram
+
+
+
+
+
+## 4. Implementation Details
+
+
+
+### 4.1 Functional Requirements 
+
+
+
+
+
+### 4.2 Non-Functional Requirements 
+
+
+
+
+
+### 4.3 Modules
+
+
+
+#### 4.3.1 
+
+
+
+
 
 ## 5. Testing
 
@@ -36,7 +107,7 @@ Samaritan uses Python Unittest and React's *insert framework name here* to valid
   - Validates response Status Codes 
   - Validates contents of responses
   - Validates functionality of the API
- 
+
 - Facial recognition tests
   - Validates that the facial recognition works under numerous circumstances
   - Validates facial comparisons from "known" database
