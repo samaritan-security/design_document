@@ -80,6 +80,7 @@ The following courses from within the Iowa State Curriculum have given the devel
 
 #### 4.3.3 React Client
 
+
 ## 5. Testing
 
 
@@ -95,7 +96,7 @@ Samaritan uses Python Unittest and React's *insert framework name here* to valid
   - Validates response Status Codes 
   - Validates contents of responses
   - Validates functionality of the API
- 
+
 - Facial recognition tests
   - Validates that the facial recognition works under numerous circumstances
   - Validates facial comparisons from "known" database
