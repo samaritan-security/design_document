@@ -119,6 +119,10 @@ This allows forwarder allows us to distinguish our product and appeal to organiz
 
 #### 4.3.3 API
 
+The API module consists of Samaritan's CRUD API, which allows for us to bridge functionality between the Facial Recognition module and the Security Camera module with our front end. Additionally, the API is where the client for MongoDB support is hosted and is responsible for database retrieval/posting functionality. If separate modules need to adjust contents in the database, they make an internal call to ```app.py```, which also hosts the Flask setup and is where HTTPS calls are made. Having an API allows for a smoother transition for communication between the backend and the front end.
+
+The API uses [Flask](https://pypi.org/project/Flask/) to create the CRUD functionality and [PyMongo](https://pypi.org/project/pymongo/) + [MongoEngine](https://pypi.org/project/mongoengine/) for the database functionality to [MongoDB](http://www.mongodb.org). We chose using a NoSQL database to focus on scalability of Samaritan, and because our product does not require the utilization of schema (Samartian does not require lots of JOINS for example).
+
 #### 4.3.4 React Client
 
 
