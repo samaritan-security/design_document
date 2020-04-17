@@ -163,19 +163,18 @@ Samaritan uses Python Unittest and React's *insert framework name here* to valid
 
 ### 5.2 Hardware and Software 
 
+When it comes to hardware, our team will have to validate that hardware can connect and stream data to local IPs that Samaritan can also connect to. These should be the only aspects in regards to hardware we would have to worry about. Samaritan validates that an IP is valid and working before continuing to process data. Samaritan will use Python 3.7’s Unittest and Pytest to for unit and integration testing.
+
 ### 5.3 Functional Testing
+
+Since Samaritan Security’s backend will primarily be written in Python, we will be using unittest library to create unit tests in python. We can also use unittest  to validate that moving pieces work together in Samaritan.
 
 ### 5.4 Nonfunctional Testing
 
+We can analyze load from our EC2 instance to inspect performance. Samaritan is lightweight, so it does not consume many server resources. 
+- do we want to validate data being sent securely through API calls? The usability of Samaritan is confirmed through Github Issues and corresponding code through Pull Requests on Github. Packages in Samaritan will be compatible with each other by pinning versions of libraries we are using and making sure that we are using those specific versions of the library. We also confirm this by having each developer use virtual environments as well. 
 
-
-
-
-
-
-
-
-### Concluding Material 
+## Concluding Material 
 
 ### 6.1 Conclusion
 
