@@ -28,7 +28,7 @@ Samaritan is intended for business or company usage. The main scenario we are co
 
 Samaritan Security is a self proposed project, and is available open sourced to the public under the *license name here* license.
 
-## 2. Abstract
+## 2. Executive Summary
 
 In this section, we will go more into depth relevant standards used to develop this project, and also go into more depth on what practices were used specifically and how they were utilized. We will also cover how classes taught at Iowa State helped prepare us to succeed in the development of this project.  In addition, we will cover some of the main features and requirements that Samaritan accomplished. 
 
@@ -59,9 +59,7 @@ Collectively these requirements define the intended functionality of our system.
 The following courses from within the Iowa State Curriculum have given the development team the necessary skills to complete this project: 
 
 - SE/CprE 414X
-	-  CprE 414X introduced big data concepts along with data warehousing concepts that introduced a data management perspective for Samaritan.
 - DS 201
-	- DS 201 introduces to introductory Python concepts, which helped us decide to use Python, given Samartian's analytic intentions.
 - SE/Com S 309
   - This project-based class gave an in-depth look into Agile development practices by allowing students to come up with a self-proposed project and to develop it from start to finish. This class is probably the most relevant skills to complete Samaritan because of the hands-on skills we gained from creating a self-proposed project from start to finish
 - SE/Com S 319
