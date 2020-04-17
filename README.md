@@ -20,17 +20,15 @@
 
 ## 1. Introductory Material
 
-TODO: write an introduction here
+Samaritan is a security system that is designed to ease the stresses and complexities of monitoring your business or company. Security is one of the top priorities that any company will have, because of the need to protect valuable company assets and goods. What is exhausting about this, however, is that monitoring these assets take time, effort, and money. The goal of Samaritan is to help make the duanting task of securing your company easier.
+
+Samaritan is intended for business or company usage. The main scenario we are considering is identifying and alerting when an unknown person has entered a secured area in the business area. To cater to such settings, we developed Samaritan to include facial recognition capabilities that will allow it to, in real time, alert the user if anyone other than a registered employee has entered the company office. Samaritan could be expanded and catered to more specific settings, however, this is the scenario under which the project was initially conceptualized.
 
 ### 1.1 Acknowledgement
 
 Samaritan Security is a self proposed project, and is available open sourced to the public under the *license name here* license.
 
-Samaritan is a security system that is designed to ease the stresses and complexities of monitoring your business or company. Security is one of the top priorities that any company will have, because of the need to protect valuable company assets and goods. What is exhausting about this, however, is that monitoring these assets take time, effort, and money. The goal of Samaritan is to help make the duanting task of securing your company easier.
-
-Samaritan is intended for business or company usage. The main scenario we are considering is identifying and alerting when an unknown person has entered a secured area in the business area. To cater to such settings, we developed Samaritan to include facial recognition capabilities that will allow it to, in real time, alert the user if anyone other than a registered employee has entered the company office. Samaritan could be expanded and catered to more specific settings, however, this is the scenario under which the project was initially conceptualized.
-
-## 3. Executive Summary
+## 2. Executive Summary
 
 In this section, we will go more into depth relevant standards used to develop this project, and also go into more depth on what practices were used specifically and how they were utilized. We will also cover how classes taught at Iowa State helped prepare us to succeed in the development of this project.  In addition, we will cover some of the main features and requirements that Samaritan accomplished. 
 
