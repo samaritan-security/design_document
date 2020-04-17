@@ -74,11 +74,19 @@ The following courses from within the Iowa State Curriculum have given the devel
 
 ### 4.3 Modules
 
+In the following sections, we will describe the key modules that make up our software. These modules consist, in a broad sense, of the Facial Recognition module, the Security Camera module, the back end API, and the front end React Client. At the start of our project, we had a lot of ideas as to what should be included in our final product and how we would be able to distinguish ourselves from anything else that was already on the market. There were some changes that needed to be made to what should be included in our product as it took slighly longer than expected to fully flush out our business plan as well as working around the loss of a team member. Ultimately though, we developed a list of the key modules to make up our minimum viable product (MVP). 
+
 #### 4.3.1 Facial Recognition Module
 
-#### 4.3.2 API
+The Facial Recognition Module encompases the core functionality of our back end code. This module is made up primarily of the RecogScript.py and FacialRecog.py. The RecogScript is the *main* of our backend, where we first get all of the cameras that are connected to our system as well as all of the information on the people we have in the database. Then we loop through those cameras, collecting a frame from each camera and attempt to locate and identify any faces within the frame. This leads us into the FacialRecog file as where most of the heavy lifting of the back end takes place. Within the FacialRecog code, we process the encoded frame and person images to compare if there is a match, and if there is a match whether or not that person is known to the organization. From there, the data that is to be sent to the front end is built into a JSON object as the known and unknown matches are checked. While we are are building that JSON object we are also checking to see if there have been any alerts associated with a person as well as marking where they were last seen. This allows us to give security personell the ability to track people throughout the organization if there was ever a need to know where a person went in a building. 
 
-#### 4.3.3 React Client
+#### 4.3.2 Security Camera Module
+
+The code the comprises our Facial Recognition Module makes use of a large amount of code that enables us to tap into the camera feeds of an organization's security cameras. 
+
+#### 4.3.3 API
+
+#### 4.3.4 React Client
 
 
 ## 5. Testing
