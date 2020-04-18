@@ -20,35 +20,66 @@
 
 ## 1. Introductory Material
 
-TODO: write an introduction here
+Samaritan is a security system that is designed to ease the stresses and complexities of monitoring your business or company. Security is one of the top priorities that any company will have, because of the need to protect valuable company assets and goods. What is exhausting about this, however, is that monitoring these assets take time, effort, and money. The goal of Samaritan is to help make the duanting task of securing your company easier.
+
+Samaritan is intended for business or company usage. The main scenario we are considering is identifying and alerting when an unknown person has entered a secured area in the business area. To cater to such settings, we developed Samaritan to include facial recognition capabilities that will allow it to, in real time, alert the user if anyone other than a registered employee has entered the company office. Samaritan could be expanded and catered to more specific settings, however, this is the scenario under which the project was initially conceptualized.
 
 ### 1.1 Acknowledgement
 
 Samaritan Security is a self proposed project, and is available open sourced to the public under the *license name here* license.
 
-## 2. Executive Summary
+## 2. Abstract
+
+In this section, we will go more into depth relevant standards used to develop this project, and also go into more depth on what practices were used specifically and how they were utilized. We will also cover how classes taught at Iowa State helped prepare us to succeed in the development of this project.  In addition, we will cover some of the main features and requirements that Samaritan accomplished. 
 
 ### 2.1 Development Standards and Practices Used
 
-talk about the usual agile bullshit here, but also our git org/repo + using issues + prs 
+This project was developed using an Agile development strategy and test driven development (TDD). We first started with the planning stage of Agile by holding weekly meetings with both our project advisor and the team in order to break the project into smaller user stories and gather information relevant to those stories. Weekly advisor meetings helped scope the vision of our project and narrow down our requirements. During the second semester, these meetings were held online. It proved to be extremely useful during the transition to online work during the end of our project. 
+
+Sprints were broken up into 2-week increments, and furthermore broken down into front-end and back-end requirements. After each weekly meeting, we assigned tasks to developers based on the sprint retrospective. We utilized Github to host our repo and also our project backboard. In order to ensure accuracy of code, we also utilized code reviews. Code reviews were done both online Github (by submitting pull-requests), and also in-person during our weekly meetings.
 
 ### 2.2 Summary of Requirements
 
-Samaritan has the ability to:
+The requirements of the project can be summarized in the following list. The system must be able to: 
+
+- Display camera feeds to the user
+
+- Recognize if it knows a person or does not know a person
+
+- Alert the user when it recognizes someone who is unauthorized
+
+- Central dashboard for viewing camera feeds
+
+- Ability to add new users to database
+
+Collectively these requirements define the intended functionality of our system. These requirements are intended to be viewed as the generalized requirements of our system with the intent that our software will be able to run on any pre-existing hardware. 
 
 ### 2.3 Applicable Courses from Iowa State Curriculum
 
 The following courses from within the Iowa State Curriculum have given the development team the necessary skills to complete this project: 
 
 - SE/CprE 414X
+	-  CprE 414X introduced big data concepts along with data warehousing concepts that introduced a data management perspective for Samaritan.
 - DS 201
+	- DS 201 introduces to introductory Python concepts, which helped us decide to use Python, given Samartian's analytic intentions.
 - SE/Com S 309
+  - This project-based class gave an in-depth look into Agile development practices by allowing students to come up with a self-proposed project and to develop it from start to finish. This class is probably the most relevant skills to complete Samaritan because of the hands-on skills we gained from creating a self-proposed project from start to finish
 - SE/Com S 319
+  - In a similar fashion to Com S 309, SE 319 taught students about Agile development but rather in a smaller scale. This solidified our development practices and gave us skills to write better code and to work as a team on a smaller scale
+- SE/Com S 329
+  - This course covers project management which gave us the necessary skills to plan and work together as a team on a project of such a large scale
 - CprE 489
 
 ### 2.4 New Skills/Knowledge Acquired Outside of University Teachings
 
-*write book here*
+The following list briefly covers some of the skills that were acquired throughout the development of this project that have not been formally taught: 
+
+- Backend development in Python
+  - **<u>insert stuff here about backend cuz idk exactly what ya'll used</u>**
+- Frontend development with React
+  - Utilized TypeScript instead of JavaScript because TypeScript allows for more productive development as it includes features such as static checking
+  - For component building, Storybook was used. Storybook allows rendering of each individual React component so that development may be done in smaller, incremental chunks without having to deal with components that aren't relevant to the current sprint
+  - Ant Design was also utilized for basic front-end design
 
 ## 3. Revised Project Design
 
@@ -90,7 +121,9 @@ This allows forwarder allows us to distinguish our product and appeal to organiz
 
 #### 4.3.3 API
 
+The API module consists of Samaritan's CRUD API, which allows for us to bridge functionality between the Facial Recognition module and the Security Camera module with our front end. Additionally, the API is where the client for MongoDB support is hosted and is responsible for database retrieval/posting functionality. If separate modules need to adjust contents in the database, they make an internal call to ```app.py```, which also hosts the Flask setup and is where HTTPS calls are made. Having an API allows for a smoother transition for communication between the backend and the front end.
 
+The API uses [Flask](https://pypi.org/project/Flask/) to create the CRUD functionality and [PyMongo](https://pypi.org/project/pymongo/) + [MongoEngine](https://pypi.org/project/mongoengine/) for the database functionality to [MongoDB](http://www.mongodb.org). We chose using a NoSQL database to focus on scalability of Samaritan, and because our product does not require the utilization of schema (Samartian does not require lots of JOINS for example).
 
 #### 4.3.4 React Client
 
@@ -132,16 +165,25 @@ Samaritan uses Python Unittest and React's *insert framework name here* to valid
 
 ### 5.2 Hardware and Software 
 
+When it comes to hardware, our team will have to validate that hardware can connect and stream data to local IPs that Samaritan can also connect to. These should be the only aspects in regards to hardware we would have to worry about. Samaritan validates that an IP is valid and working before continuing to process data. Samaritan will use Python 3.7’s Unittest and Pytest to for unit and integration testing.
+
 ### 5.3 Functional Testing
+
+Since Samaritan Security’s backend will primarily be written in Python, we will be using unittest library to create unit tests in python. We can also use unittest  to validate that moving pieces work together in Samaritan.
 
 ### 5.4 Nonfunctional Testing
 
+We can analyze load from our EC2 instance to inspect performance. Samaritan is lightweight, so it does not consume many server resources. 
+- do we want to validate data being sent securely through API calls? The usability of Samaritan is confirmed through Github Issues and corresponding code through Pull Requests on Github. Packages in Samaritan will be compatible with each other by pinning versions of libraries we are using and making sure that we are using those specific versions of the library. We also confirm this by having each developer use virtual environments as well. 
 
+## Concluding Material 
 
+### 6.1 Conclusion
 
+Securing company assets is a timely and expensive business. Companies need to monitor their office space and goods in a timely and efficient manner, which can often prove to be difficult with the current market standard. Samaritan Security aims to ease these issues by providing a seamless automation security system that can be added on to any current company security system for an added layer of security.
 
+Samaritan utilizes features such as facial recognition to ensure that only employees and authorized guests are allowed to enter the facilities that are being monitored. Samaritan does this by matching people's faces spotted on the camera feed with the company’s database of known people and employees to distinguish if someone caught on the premises is authorized to be there. By moving this detection process to an automated system, the company removes an element of human error from their security, making it more efficient and secure.
 
+### 6.2 Recommendation for Future Work
 
-
-
-### Validates contents of responsesmultiple cameras at once 
+In the future Samaritan can be improved with a feature that helps track the movements of unidentified people. As an unknown person moves from one area to another, the separate cameras pick up the same person and send separate alerts. Samaritan could be made to record more information about the unknown person and record where that person is moving. Another feature that could be added to Samaritan is additional protection against people wearing masks or any other facial obstructions. A feature to help Samaritan recognize a person without being able to see their face would allow the system to flag an individual as an unknown person without being able to see their face. It is important to note that this feature should only be used to flag people as unknown. A confirmed match through the facial recognition should be the only way the system flags someone as a known person, and thus does not send an alert.
