@@ -74,7 +74,7 @@ The following courses from within the Iowa State Curriculum have given the devel
 
 ### 4.3 Modules
 
-In the following sections, we will describe the key modules that make up our software. These modules consist, in a broad sense, of the Facial Recognition module, the Security Camera module, the back end API, and the front end React Client. At the start of our project, we had a lot of ideas as to what should be included in our final product and how we would be able to distinguish ourselves from anything else that was already on the market. There were some changes that needed to be made to what should be included in our product as it took slightly longer than expected to fully flush out our business plan as well as working around the loss of a team member. Ultimately though, we developed a list of the key modules to make up our minimum viable product (MVP). Documentation for the code discussed in these modules can be found [here](https://3.14.117.253).
+In the following sections, we will describe the key modules that make up our software. These modules consist, in a broad sense, of the Facial Recognition module, the Security Camera module, the back end API, and the front end React Client. At the start of our project, we had a lot of ideas as to what should be included in our final product and how we would be able to distinguish ourselves from anything else that was already on the market. There were some changes that needed to be made to what should be included in our product as it took slightly longer than expected to fully flush out our business plan as well as working around the loss of a team member. Ultimately though, we developed a list of the key modules to make up our minimum viable product (MVP). Documentation for the code discussed in these modules can be found [here](https://3.14.117.253/index.html).
 
 #### 4.3.1 Facial Recognition Module
 
@@ -90,7 +90,11 @@ This allows forwarder allows us to distinguish our product and appeal to organiz
 
 #### 4.3.3 API
 
+
+
 #### 4.3.4 React Client
+
+
 
 
 ## 5. Testing
